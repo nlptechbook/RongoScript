@@ -1,0 +1,118 @@
+{
+  "description": "This file contains possible questions and answers to them regarding the RongoScript bot engine. The data is formatted to be used as a training set for the @RongoScriptBot demo bot built using RongoScript. @RongoScriptBot bot trained on this set will be able to recognize the question about RongoScript and choose the most appropriate answer from the existing set. You can use the json document structure used here to create your own training dataset for the @RongoScriptBot bot.",
+  "samples":
+  [
+    {
+    "class": 0,
+    "utterance":["What is RongoScript?", "What is RongoScript for?", "Purpose of RongoScript?"],
+    "response": ["RongoScript is a software product designed to be used as the core of a bot capable of classifying user's utterances and issuing appropriate responses."],
+    "ner": false,
+    "action": null 
+    },
+    {
+    "class": 1,
+    "utterance":["Who developed RongoScript?", "Who created RongoScript?", "Who created you?", "The creators of RongoScript.", "The developers of RongoScript.", "Who built you?"],
+    "response": ["A small group of enthusiasts specializing in neural networking."],
+    "ner": false,
+    "action": null 
+     },
+    {
+    "class": 2,
+    "utterance":["What technologies and libraries are used in RongoScript?", "What is RongoScript developed on?"],
+    "response": ["Python, TensorFlow, SpaCy, Transformer"],
+    "ner": false,
+    "action": null 
+     },
+    {
+    "class": 3,
+    "utterance":["What technology is used to classify user utterances?", "What is the key underlying technology?"],
+    "response": ["Transformer"],
+    "ner": false,
+    "action": null 
+     },
+    {
+    "class": 4,
+    "utterance":["Where is RongoScript used?", "Where has RongoScript been deployed?"],
+    "response": ["RongoScript is used in @RongoScriptBot and @RuRongoBot demo bots in Telegram."],
+    "ner": false,
+    "action": null 
+     },
+    {
+    "class": 5,
+    "utterance":["Why is RongoScript better than others?", "Why is RongoScript better than DialogFlow?", "Why should I choose RongoScript?", "The advantages of RongoScript?", "What makes RongoScript different?"],
+    "response": ["New ideas. A set of innovations. Allows you to configure and train the underlying neural network."],
+    "ner": false,
+    "action": null 
+     },
+    {
+    "class": 6,
+    "utterance":["Competitors of RongoScript?", "Similar products?", "What RongoScript competes with?"],
+    "response": ["DialogFlow"],
+    "ner": false,
+    "action": null 
+     }, 
+    {
+    "class": 7,
+    "utterance":["What innovations are used in RongoScript?", "What's new in RongoScript?"],
+    "response": ["We have implemented some new ideas in this project. As a quick example: in the course of processing input data with a transformer, RongoScript uses the embedding based on syntactic dependencies instead of the regular positional embedding. Another idea we are working on is teaching the transformer to make interpretations based on not only input words and phrases but also on contextual knowledge, so that it can understand the meaning of a phrase issued in different contexts."],
+    "ner": false,
+    "action": null 
+     },
+    {
+    "class": 8,
+    "utterance":["Is RongoScript an open project?", "Where can I find the code?", "Is there a source code on GitHub?"],
+    "response": ["There is a page for RongoScript on GitHub that explains some technical details of the project, but the source code has not yet been released. Closed project."],
+    "ner": false,
+    "action": null 
+     },
+    {
+    "class": 9,
+    "utterance":["How to contact developers?", "How to find developers?", "How to contact creators?"],
+    "response": ["Through the project page on GitHub."],
+    "ner": false,
+    "action": null 
+     },
+    {
+    "class": 10,
+    "utterance":["Can I test RongoScript with my data?", "Can I use my own dataset?"],
+    "response": ["@RongoScriptBot bot allows you to test the RongoScript engine on your data or take advantage of a model trained on the FAQ set found in the accompanying faq_en.json file."],
+    "ner": false,
+    "action": null 
+     },
+    {
+    "class": 11,
+    "utterance":["What is known about DeepPavlov?", "What's new about Google?", "What's the news about Microsoft?", "What's new in Twitter?"],
+    "response": [""],
+    "ner": true,
+    "action": "get_news" 
+     },
+    {
+    "class": 12,
+    "utterance":["What does the ner field in the faq.json training file mean?", "What is the ner field in the training record?", "What is the ner for?"],
+    "response": ["The value of the ner field indicates whether the named entity recognition procedure (ner) will be performed for this record. If true, the named entities are replaced with their corresponding ner labels."],
+    "ner": false,
+    "action": null 
+     },
+    {
+    "class": 13,
+    "utterance":["What does the action field in the faq.json training file mean?", "What is the action field in the training record?", "What is the action for?"],
+    "response": ["The value of the action field indicates whether the handler in the form of a function will be called for this record. If ner is set to true, then a dictionary containing the named entities extracted from the user's replica, along with their corresponding ner labels as the keys, will be passed to the specified function."],
+    "ner": false,
+    "action": null 
+     },
+    {
+    "class": 14,
+    "utterance":["Is there a limitation on the number of records in the training set?", "How many records can I have in the training set?", "How many training pairs can I use?"],
+    "response": ["In this version of the bot, the limit is 100 training pairs. Due to the small computing capacity of the server on which it runs. Although RongoScript itself has no such restrictions."],
+    "ner": false,
+    "action": null 
+     }, 
+    {
+    "class": 15,
+    "utterance":["How to train a model for RongoScript testing in the bot?"],
+    "response": ["You can use our ready-made model trained on the FAQ pairs. To do this, use the /train_faq command. To train a model on your data, upload the json file as a Document with your training pairs. In this case, the creation of the model will start automatically after uploading your file."],
+    "ner": false,
+    "action": null 
+     }
+  ]
+}
