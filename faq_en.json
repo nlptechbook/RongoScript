@@ -53,7 +53,7 @@
      }, 
     {
     "class": 7,
-    "utterance":["What innovations are used in RongoScript?", "What's new in RongoScript?"],
+    "utterance":["What innovations are used in RongoScript?", "What are the new ideas in RongoScript?"],
     "response": ["We have implemented some new ideas in this project. As a quick example: in the course of processing input data with a transformer, RongoScript uses the embedding based on syntactic dependencies instead of the regular positional embedding. Another idea we are working on is teaching the transformer to make interpretations based on not only input words and phrases but also on contextual knowledge, so that it can understand the meaning of a phrase issued in different contexts."],
     "ner": false,
     "action": null 
