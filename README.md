@@ -1,6 +1,7 @@
 <img src="https://github.com/nlptechbook/RongoScript/blob/main/Icon/moai.jpg" align="left" width="100px"/>
 
 # RongoScript: Bot engine with transformer
+<sub>Art by Konstantin Lupanov</sub> 
 <br clear="left"/>
 
 RongoScript is a software product designed to be used as a bot engine that relies on natural language to communicate with the user. The concept is similar to that one used in Google's DialogFlow: the system processes and categorizes user's responses, reacting in a predefined way. 
@@ -82,5 +83,3 @@ phrase = 'This is a user phrase.'
 response = model.get_response(phrase)  
 
 ```
-
-
