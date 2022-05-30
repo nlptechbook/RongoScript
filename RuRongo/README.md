@@ -1,6 +1,7 @@
 <img src="https://github.com/nlptechbook/RongoScript/blob/main/Icon/moai.jpg" align="left" width="100px"/>
 
 # RongoScript: Движок для бота на базе трансформера 
+<sub>Рисунок Константина Лупанова</sub> 
 <br clear="left"/>
 
 [Switch to the English version](https://github.com/nlptechbook/RongoScript/blob/main/README.md)
