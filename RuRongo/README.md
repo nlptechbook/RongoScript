@@ -4,7 +4,7 @@
 <sub>Рисунок Константина Лупанова</sub> 
 <br clear="left"/>
 
-[Switch to the English version](https://github.com/nlptechbook/RongoScript/blob/main/README.md)
+[Switch to the English version](https://github.com/nlptechbook/RongoScript/)
 
 RongoScript - это программный продукт, предназначенный для использования в качестве движка бота, использующего естественный язык для коммуникации с пользователем. Концепция схожа с той, что лежит в основе гугловского DialogFlow: система обрабатывает и классифицирует реплики пользователя, реагируя предопределенным способом.  
 
