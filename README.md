@@ -75,11 +75,10 @@ Here is a quick example of using RongoScript in code. We provide it just to give
 #Creating and training a model on data found in a json file  
 import rongoscript as rs   
 pathtojson ='path/to/training/data/file'  
-model = rs.create_model(name = 'my_model', training_data = pathtojson, lang = 'en')  
+model = rs.create_model(training_data = pathtojson, lang = 'en')
 
-#Loading the model and using it for getting appropriate responses to user's phrases  
-model = rs.load_model('my_model')  
-phrase = 'This is a user phrase.'  
+# Using the model for getting appropriate responses to user's phrases
+phrase = 'This is a user phrase.'
 response = model.get_response(phrase)  
 
 ```
