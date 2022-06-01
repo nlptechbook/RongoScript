@@ -1,3 +1,4 @@
 26-05-2022 Adjusting the length of an input utterance to its actual size before sending it to the transformer for prediction 
 26-05-2022 Increasing the length of a one-word utterance before sending it to the transformer for prediction
 29-05-2022 Improving the mechanism of threshold confidence to take into account the summary of two largest scores
+31-05-2022 Re-writing the rongoscript module, using the object-oriented paradigm (classes)
