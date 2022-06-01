@@ -106,13 +106,20 @@ https://habr.com/ru/company/ods/blog/660041/#post-content-body
 ## Использование RongoScript в коде
 Вот краткий пример использования RongoScript. Мы предоставляем его только для того, чтобы дать вам представление о том, как RongoScript доступный в форме Python библиотеки, можно использовать в коде. (Обратите внимание, что показанная здесь библиотека rongoscript в настоящее время не является общедоступной.)
 ```python
-#Creating and training a model on data found in a json file 
-import rongoscript as rs
-pathtojson ='path/to/training/data/file'
+# Creating and training a model on data found in a json file  
+import rongoscript as rs   
+pathtojson ='/path/to/training/data/file'  
 model = rs.create_model(training_data = pathtojson, lang = 'en')
 
 # Using the model for getting appropriate responses to user's phrases
 phrase = 'This is a user phrase.'
-response = model.get_response(phrase)
+response = model.get_response(phrase)  
+
+# Saving the model to disk   
+model.save('/path/to/location')
+
+# Loading it back into a variable
+model = rs.load_model('path/to/location')
+
 ```
 
