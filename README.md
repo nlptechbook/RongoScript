@@ -82,7 +82,7 @@ phrase = 'This is a user phrase.'
 response = model.get_response(phrase)  
 
 # Saving the model to disk   
-model.save(/path/to/location)
+model.save('/path/to/location')
 
 # Loading it back into a variable
 model = rs.load_model('path/to/location')
