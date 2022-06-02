@@ -4,7 +4,7 @@ import logging
 from telegram import Update, ForceReply
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
-from configuration import *
+from configs import *
 import os
 import rurongoscript as rs
 
