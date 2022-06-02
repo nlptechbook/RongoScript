@@ -88,3 +88,4 @@ model.save('/path/to/location')
 model = rs.load_model('path/to/location')
 
 ```
+ An example of the usage of rongoscript in a Telegram bot can be found in /Bot/rongobot.py of this repository.
