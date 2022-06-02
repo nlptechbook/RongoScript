@@ -122,4 +122,4 @@ model.save('/path/to/location')
 model = rs.load_model('path/to/location')
 
 ```
-
+Пример использования библиотеки в Telegram боте можно найти в /Bot/rurongobot.py
