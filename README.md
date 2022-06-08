@@ -29,6 +29,13 @@ will be reduced to the same single phrase:
 Thus, allowing the classifier to uniquely identify all such phrases. At the same time, as noted above, the previously extracted specific names can be passed to processing to generate a response specific to this particular request.
 ## Embedding based on syntactic relations instead of positional embedding 
 In RongoScript, we experiment with technology. So along with the familiar positional embedding in the transformer model, we use embedding based on syntactic relations in an utterance. In this case, the words are numbered based on the level at which they are located in the tree of syntactic dependencies of the sentence. So, the main verb will be at the top level in the syntax tree. One level down in a typical sentence are such parts of speech as the subject and direct object. That is, the most significant words of the sentence will be at higher levels of the syntactic dependency tree, providing a kind of sorting of words according to their importance.
+
+As an example, consider the following utterance:
+
+>As a matter of fact, the server maintains a release repository.
+
+As you can see, the utterance starts with a phrase commonly used to emphasize the truth of an assertion. From the standpoint of the conveyed meaning, however, the assertion itself matters much more. That means that in case of the positional approach the rank values for the less important words will be higher than the rank values for the more important words. While the approach based on syntactic relations will rank the words more appropriately.
+
 ## Taking the context of a discourse into account
 Another idea we're working on is teaching the transformer to make interpretations based on not only a single phrase but also on the context of the entire discourse, so that the transformer can "understand" the meaning of a phrase issued in different contexts. 
 
