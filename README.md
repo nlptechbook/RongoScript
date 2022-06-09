@@ -4,9 +4,9 @@
 <sub>Art by Konstantin Lupanov</sub> 
 <br clear="left"/>
 
-RongoScript is a software product designed to be used as a bot engine that relies on natural language to communicate with the user. The concept is similar to that one used in Google's DialogFlow: the system processes and categorizes user's responses, reacting in a predefined way. 
+RongoScript is a software product designed to be used as a bot engine that relies on natural language to communicate with the user. The concept is similar to that one used in Google's DialogFlow: the system processes and categorizes user input, reacting in a predefined way. 
 
-A simplified version of the engine is used in our @RongoScriptBot demo bot in Telegram. The bot allows you to test the engine on your own data or use a provided set. More about this below in the Demo bot in Telegram section.
+To classify user input, RongoScript encapsulates a neural network with a transformer architecture. A simplified version of the engine is used in our @RongoScriptBot demo bot in Telegram. The bot allows you to test the engine on your own data or use a provided set. More about this below in the Demo bot in Telegram section.
 
 The following sections give a brief overview of the technologies encompassed by RongoScript
 ## Classifying user phrases with a transformer 
