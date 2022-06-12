@@ -13,9 +13,9 @@ The following sections give a brief overview of the technologies encompassed by 
 The idea is that the bot receives an utterance from the user in natural language and classifies it to a certain intent, in order to execute the assigned command or generate an adequate response. To solve the classification problem, RongoScript uses the neural network based on a transformer. When an intent is identified, the action assigned to it is performed. For example, a predefined function is executed with the parameters passed in, which are retrieved from the user's utterance; or - in the simplest case - a hardcoded response is sent back.  
 ## Processing text data before feeding it to the transformer
 Before utterances are fed into the transformer (both during training and during classification), they are pre-processed. The next sections describe the main steps of this pre-processing.
-## Lemmatization
+### Lemmatization
 Lemmatization is the process of reducing different forms of a word (token) to their lemma. The lemma is the basic form of the word. For clarity, a lemma can be thought of as the form in which a word appears in a dictionary. For example, the lemma for "does" is "do". The most important thing about lemmatization is that it reduces the number of unique words found in the training phrases and, therefore, it reduces the volume of the vocabulary required for acceptable operation of the classifier.
-## NER processing 
+### NER processing 
 NER (named entity recognition) processing is performed in two stages. First, the named entities found in the text (names of people, organizations, cities, dates, etc.) are stored in a dictionary, which can then be sent to the function defined for this class((if any).
 The next step involves replacing the named entities with their corresponding labels. So, for example, Paris will be replaced by GPE, and, say, DeepPavlov by ORG. This contributes to the generalization of the data, thus improving the predictive accuracy of the classifier. 
 
