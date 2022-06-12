@@ -49,7 +49,7 @@ It doesn't make much sense without the context elaborated so far. The previous u
 
 As you can see, the most important word in this previous utterance - from the standpoint of understanding the meaning carried in the next utterance - is apple. So, we don't need to pass in the entire previous utterance: a single word extracted from it is enough. You may womder how to identify this single word (or a group of the most important words in the utterance)? The short answer is with the help of syntactic dependency analysis. 
 ## Demo bot in Telegram 
-By this point, you might have a question: where can I see how it all works? To address this, we have created a @RongoScriptBot demo bot in Telegram that relies on RongoScript. The bot consists of the following components:
+By this point, you might have a question: where can I see how it all works? To address this, we have created a @RongoScriptBot demo bot in Telegram that relies on RongoScript. This simple demo bot consists of the following components:
 - An interface to interact with a user via text messages in Telegram
 - A Transformer-based neural network for classifying user messages
 - A system for processing classified user messages, which generates responses
