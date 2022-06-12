@@ -29,7 +29,7 @@ will be reduced to the same single phrase:
 >What will the weather be like in DATE in GPE?
 
 Thus, allowing the classifier to uniquely identify all such phrases. At the same time, as noted above, the previously extracted specific names can be passed to processing to generate a response specific to this particular request.
-## Embedding based on syntactic relations instead of positional embedding 
+### Embedding based on syntactic relations instead of positional embedding 
 In RongoScript, we experiment with technology. So along with the familiar positional embedding in the transformer model, we use embedding based on syntactic relations in an utterance. In this case, the words are numbered based on the level at which they are located in the tree of syntactic dependencies of the sentence. So, the main verb will be at the top level in the syntax tree. One level down in a typical sentence are such parts of speech as the subject and direct object. That is, the most significant words of the sentence will be at higher levels of the syntactic dependency tree, providing a kind of sorting of words according to their importance.
 
 As an example, consider the following utterance:
