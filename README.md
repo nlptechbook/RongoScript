@@ -28,8 +28,20 @@ and
 will be reduced to the same single phrase: 
 >What will the weather be like in DATE in GPE?
 
-Thus, allowing the classifier to uniquely identify all such phrases. At the same time, as noted above, the previously extracted specific names can be passed to processing to generate a response specific to this particular request.
-### Embedding based on syntactic relations instead of positional embedding 
+Thus, allowing the classifier to uniquely identify all such phrases. At the same time, as noted above, the previously extracted specific names can be passed to processing to generate a response specific to this particular request. 
+
+### Syntactic dependency analysis
+Sometimes, submitted utterances need to be processed through more than just lemmatization and NER processing touched upon in the above sections. For example, in the utterance:
+
+>I wonder how computers understand language.
+
+You may need to pass only the complement clause to the classifier: 
+
+>how computers understand language
+
+While the predicate 'wonder' should also be taken into account. That is, you need to perform a more complicated, "smart" processing of the input. RongoScript allows you to take advantage of this functionality by passing additional parameters to the get_response() method of the model. An example of such a call can be found in the Using RongoScript in code section later. 
+
+## Embedding based on syntactic relations instead of positional embedding 
 In RongoScript, we experiment with technology. So along with the familiar positional embedding in the transformer model, we use embedding based on syntactic relations in an utterance. In this case, the words are numbered based on the level at which they are located in the tree of syntactic dependencies of the sentence. So, the main verb will be at the top level in the syntax tree. One level down in a typical sentence are such parts of speech as the subject and direct object. That is, the most significant words of the sentence will be at higher levels of the syntactic dependency tree, providing a kind of sorting of words according to their importance.
 
 As an example, consider the following utterance:
@@ -89,6 +101,10 @@ model = rs.create_model(training_data = pathtojson, lang = 'en')
 # Using the model for getting appropriate responses to user's phrases
 phrase = 'This is a user phrase.'
 response = model.get_response(phrase)  
+
+# Invoking get_response() with additional parameters for "smart" processing 
+phrase = 'I know this user phrase has a complement clause.'
+response = model.get_response(phrase, preprocessing = 'smart', type = 'cc') 
 
 # Saving the model to disk   
 model.save('/path/to/location')
