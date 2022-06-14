@@ -39,7 +39,30 @@ You may need to pass only the complement clause to the classifier:
 
 >how computers understand language
 
-While the predicate 'wonder' should also be taken into account. That is, you need to perform a more complicated, "smart" processing of the input. RongoScript allows you to take advantage of this functionality by passing additional parameters to the get_response() method of the model. An example of such a call can be found in the Using RongoScript in code section later. 
+While the predicate 'wonder' should also be taken into account. That is, you need to perform a more complicated, "smart" processing of the input. 
+
+> **Note**: To gain a cursory understanding of the underlying theory, you might explore the [CommitmentBank Dataset](https://metatext.io/datasets/commitmentbank), a resource for studying projection behavior of finite clausal complements in naturally occurring data.
+
+RongoScript allows you to take advantage of this functionality by passing additional parameters to the get_response() method of the model. An example of such a call can be found in the Using RongoScript in code section later. To understand where this capability can be applicable, consider the following example:
+
+Suppose you want to learn what people think about why [rongorongo](https://en.wikipedia.org/wiki/Rongorongo) - a system of mysterious glyphs discovered on the island of Rapa Nui - still has not been deciphered. To address this task, you might create a bot that asks its users the following question:
+
+>Why do you think rongorongo has not been deciphered yet? 
+
+You could have trained the underlying model to classify users answers into just these two categories:
+
+>1. That's a technical issue: researchers are to develop an algorithm that will lead to a successful solution.
+>2. The problem is that we know almost nothing about those who used the script: the context is important.
+
+Now suppose the bot receives the following utterance: 
+
+>I don't believe that the context is important. Modern researchers can employ AI and the computational power of supercomputers to successfully decipher unknown texts, regardless of whether the context is known or not. 
+
+With the help of the "smart" processing discussed earlier in this section, the above utterance can be converted to the following one before being sent to the classifier:  
+
+>The context is not important. Modern researchers can employ AI and the computational power of supercomputers to successfully decipher unknown texts, regardless of whether the context is known.  
+
+This will be classified to a specific category (the first one, in this particular example), thus allowing your bot to ask a suitable follow-up question.
 
 ## Embedding based on syntactic relations instead of positional embedding 
 In RongoScript, we experiment with technology. So along with the familiar positional embedding in the transformer model, we use embedding based on syntactic relations in an utterance. In this case, the words are numbered based on the level at which they are located in the tree of syntactic dependencies of the sentence. So, the main verb will be at the top level in the syntax tree. One level down in a typical sentence are such parts of speech as the subject and direct object. That is, the most significant words of the sentence will be at higher levels of the syntactic dependency tree, providing a kind of sorting of words according to their importance.
