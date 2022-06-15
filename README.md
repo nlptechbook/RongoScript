@@ -39,7 +39,7 @@ You may need to pass only the complement clause to the classifier:
 
 >how computers understand language
 
-While the predicate 'wonder' should also be taken into account. That is, you need to perform a more complicated, "smart" processing of the input. 
+While the predicate 'wonder' should also be taken into account as the embedding predicate needed to determine how much the user is committed to the assertion in the complement clause. In simple terms, you need to perform a more complicated, "smart" processing of the input. 
 
 > **Note**: To gain a cursory understanding of the underlying theory, you might explore the [CommitmentBank Dataset](https://metatext.io/datasets/commitmentbank), a resource for studying projection behavior of finite clausal complements in naturally occurring data.
 
