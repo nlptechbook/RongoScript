@@ -54,7 +54,7 @@ You could have trained the underlying model to classify users answers into just 
 >1. That's a technical issue: researchers are to develop an algorithm that will lead to a successful solution.
 >2. The problem is that we know almost nothing about those who used the script: the context is important.
 
-Now suppose the bot receives the following utterance: 
+Now suppose the bot receives the following utterance (referred to as a premise, in the terms of CommitmentBank): 
 
 >I don't believe that the context is important. Modern researchers can employ AI and the computational power of supercomputers to successfully decipher unknown texts, regardless of whether the context is known or not. 
 
