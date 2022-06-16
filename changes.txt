@@ -3,3 +3,4 @@
 29-05-2022 Improving the mechanism of threshold confidence to take into account the summary of two largest scores
 31-05-2022 Re-writing the rongoscript module, using the object-oriented paradigm (classes)
 02-06-2022 Filtering out messages that consist entirely of unknown words 
+15-06-2022 Pre-processing sentences that contain a compliment clause 
