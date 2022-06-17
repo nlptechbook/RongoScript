@@ -1,5 +1,5 @@
 # extracting the compliment clause from the sentence that comes first from the end in the passage, 
-# in which a compliment clause will be found. Also returns the predicate and whether it is under negation.
+# in which a compliment clause will be found. Also returns the predicate and whether it is under negation and/or has a modal verb.
 # for better understanding of why you might need this, refer to https://metatext.io/datasets/commitmentbank
 #
 # here, you call cb_entailment(), which calls ccomp_extraction() internally.
