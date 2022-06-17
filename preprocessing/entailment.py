@@ -33,4 +33,4 @@ def ccomp_extraction(sent):
   ccomp_span = doc[ccomp.left_edge.i: ccomp.right_edge.i + 1]
   if ccomp.left_edge.dep_ in ['mark']:
     ccomp_span = ccomp_span[1:]
-  return ccomp_span.text, verb.lemma_, neg
+  return ccomp_span.text, verb.lemma_, neg, mod
