@@ -33,3 +33,6 @@ def syntactic(x_train):
     x_dep.append(q) 
     x_dep_flat.append(v)
   return np.asarray(x_dep)
+  
+  # test
+  # syntactic(['I want a greek pizza. I want it.'])
