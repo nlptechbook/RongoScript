@@ -6,3 +6,4 @@
 15-06-2022 Pre-processing sentences that contain a compliment clause (CommitmentBank pre-processing)
 17-06-2022 Improving CommitmentBank pre-processing by adding the functionality to determine modality of the main verb
 15-07-2022 Improving the mechanism of input data preprocessing with the use of synonyms 
+18-07-2022 The source code has been released
