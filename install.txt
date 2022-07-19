@@ -1,0 +1,5 @@
+pip install tensorflow 
+pip install python-telegram-bot --upgrade 
+pip install newsapi-python
+pip install -U spacy 
+python -m spacy download en_core_web_sm
