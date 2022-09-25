@@ -75,7 +75,7 @@ As you can see, the utterance starts with a phrase commonly used to emphasize th
 
 ## Using Pre-trained Word Embeddings in an Embedding Layer
 
-The same thoughts can be expressed in different ways, with different, synonym words. Your text classificator should recognize such phrases, and using pre-trained word embeddings is one of those techniques that can significantly improve this ability of the classificator.  In the [Pre-trained Word Embeddings in an Embedding Layer](https://github.com/nlptechbook/PretrainedEmbeddings) repository, you'll find how this can be implemented in a transformer.  
+The same thoughts can be expressed in different ways, with different, synonym words. Your text classificator should recognize such phrases, and using pre-trained word embeddings is one of those techniques that can significantly improve this ability of the classificator.  In the [Pre-trained Word Embeddings in an Embedding Layer](https://github.com/nlptechbook/PretrainedEmbeddings) repository, you'll see an example of how a pre-trained vector representation can be used in a transformer to preserve the contextual similarity of words.   
 
 ## Taking the context of a discourse into account
 Another idea we're working on is teaching the transformer to make interpretations based on not only a single phrase but also on the context of the entire discourse, so that the transformer can "understand" the meaning of a phrase issued in different contexts. 
