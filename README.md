@@ -73,6 +73,10 @@ As an example, consider the following utterance:
 
 As you can see, the utterance starts with a phrase commonly used to emphasize the truth of an assertion. From the standpoint of the conveyed meaning, however, the assertion itself matters much more. That means that in case of the positional approach the rank values for the less important words will be higher than the rank values for the more important words. While the approach based on syntactic relations will rank the words more appropriately.
 
+## Using Pre-trained Word Embeddings in an Embedding Layer
+
+The same thoughts can be expressed in different ways, with different, synonym words. Your text classificator should recognize such phrases, and using pre-trained word embeddings is one of those techniques that can significantly improve this ability of the classificator.  In the [Pre-trained Word Embeddings in an Embedding Layer](https://github.com/nlptechbook/PretrainedEmbeddings) repository, you'll find how this can be implemented in a transformer.  
+
 ## Taking the context of a discourse into account
 Another idea we're working on is teaching the transformer to make interpretations based on not only a single phrase but also on the context of the entire discourse, so that the transformer can "understand" the meaning of a phrase issued in different contexts. 
 
